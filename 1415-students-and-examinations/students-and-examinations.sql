@@ -5,9 +5,9 @@ SELECT
     sub.subject_name,
     COUNT(e.subject_name) AS attended_exams
 FROM 
-    (SELECT student_id, student_name FROM Students) AS s
+    students AS s
 NATURAL JOIN 
-    (SELECT subject_name FROM Subjects) AS sub
+    Subjects AS sub
 LEFT JOIN 
     Examinations e
 ON 
