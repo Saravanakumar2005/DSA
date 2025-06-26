@@ -6,7 +6,7 @@ class Solution {
           
         }
 
-        // if((temp.size()==4))  return ;
+         if((temp.size()==4))  return ;
 
         for(int j=1;j<=3;j++){
             if(i+j >s.length()) break;
@@ -26,7 +26,6 @@ class Solution {
         List<String> temp = new ArrayList<>();
         
         if(n>12) return ans;
-        if(n<4) return ans;
         solver(s,0,ans,temp);
         return ans;
     }
