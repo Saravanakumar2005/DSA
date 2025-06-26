@@ -3,10 +3,10 @@ class Solution {
         
         if(temp.size()==4 && i==s.length()){
            ans.add(String.join(".", temp));
-           return;
+          
         }
 
-        if((temp.size()==4) || i>s.length())  return ;
+        if((temp.size()==4))  return ;
 
         for(int j=1;j<=3;j++){
             if(i+j >s.length()) break;
